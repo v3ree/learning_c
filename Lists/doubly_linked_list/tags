@@ -1,0 +1,65 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+CC	makefile	/^CC =  gcc$/;"	m
+CFLAGS	makefile	/^CFLAGS = -Wall -g$/;"	m
+DLL_H	dll.h	4;"	d
+DLL_TYPES	dll.h	/^enum DLL_TYPES { $/;"	g
+OBJ	makefile	/^OBJ = test_dll.o dll.o$/;"	m
+TARGET	makefile	/^TARGET = test_dll$/;"	m
+TEST_SLL_H	test_dll.h	2;"	d
+__test_helper_make_dll_sut	test_dll.c	/^dll *__test_helper_make_dll_sut(enum DLL_TYPES value_type, unsigned int size)$/;"	f
+character	dll.h	/^	character, $/;"	e	enum:DLL_TYPES
+decimal	dll.h	/^	decimal, $/;"	e	enum:DLL_TYPES
+dll	dll.h	/^typedef struct dll {$/;"	s
+dll	dll.h	/^} dll;$/;"	t	typeref:struct:dll
+dll_append	dll.c	/^void dll_append(dll *list, node *new_node)$/;"	f
+dll_concat_lists	dll.c	/^dll *dll_concat_lists(dll *list1, dll *list2)$/;"	f
+dll_count_value	dll.c	/^unsigned int dll_count_value(dll *list, void *value) $/;"	f
+dll_create_list	dll.c	/^dll *dll_create_list(enum DLL_TYPES value_type) $/;"	f
+dll_create_node	dll.c	/^node *dll_create_node(void *value)$/;"	f
+dll_delete_node	dll.c	/^void dll_delete_node(dll *list, unsigned int position, bool delete_value)$/;"	f
+dll_empty_list	dll.c	/^void dll_empty_list(dll *list, bool delete_node_values)$/;"	f
+dll_equal	dll.c	/^bool dll_equal(dll *first, dll *second)$/;"	f
+dll_find_first_node_with_value	dll.c	/^node *dll_find_first_node_with_value(dll *list, void *value, int *position)$/;"	f
+dll_get_node_at_position	dll.c	/^node *dll_get_node_at_position(dll *list, unsigned int position)$/;"	f
+dll_insert_at_position	dll.c	/^void dll_insert_at_position(dll *list, unsigned int position, node *new_node) $/;"	f
+dll_node_values_equal	dll.c	/^bool dll_node_values_equal(enum DLL_TYPES value_type, node *first, node *second)$/;"	f
+dll_prepend	dll.c	/^void dll_prepend(dll *list, node *new_node)$/;"	f
+dll_print	dll.c	/^void dll_print(dll *list) $/;"	f
+dll_print_node	dll.c	/^void dll_print_node(enum DLL_TYPES value_type, node *anode) $/;"	f
+dll_reverse_list	dll.c	/^dll *dll_reverse_list(dll *list) $/;"	f
+dll_slice	dll.c	/^dll *dll_slice(dll *list, unsigned int start, unsigned int end)$/;"	f
+head	dll.h	/^    node *head;$/;"	m	struct:dll
+integer	dll.h	/^	integer, $/;"	e	enum:DLL_TYPES
+main	test_dll.c	/^int main()$/;"	f
+next	dll.h	/^    struct node *next;$/;"	m	struct:node	typeref:struct:node::node
+node	dll.h	/^typedef struct node {$/;"	s
+node	dll.h	/^} node;$/;"	t	typeref:struct:node
+prev	dll.h	/^    struct node *prev;$/;"	m	struct:node	typeref:struct:node::node
+size	dll.h	/^    unsigned int size;$/;"	m	struct:dll
+string	dll.h	/^	string $/;"	e	enum:DLL_TYPES
+tail	dll.h	/^    node *tail;$/;"	m	struct:dll
+test_dll_append_to_empty_list	test_dll.c	/^void test_dll_append_to_empty_list()$/;"	f
+test_dll_append_to_nonempty_list	test_dll.c	/^void test_dll_append_to_nonempty_list()$/;"	f
+test_dll_concat_lists	test_dll.c	/^void test_dll_concat_lists()$/;"	f
+test_dll_count_value	test_dll.c	/^void test_dll_count_value()$/;"	f
+test_dll_create_list	test_dll.c	/^void test_dll_create_list()$/;"	f
+test_dll_create_node	test_dll.c	/^void test_dll_create_node()$/;"	f
+test_dll_delete_node	test_dll.c	/^void test_dll_delete_node()$/;"	f
+test_dll_empty_list	test_dll.c	/^void test_dll_empty_list()$/;"	f
+test_dll_equal	test_dll.c	/^void test_dll_equal()$/;"	f
+test_dll_find_first_node_with_value	test_dll.c	/^void test_dll_find_first_node_with_value()$/;"	f
+test_dll_get_node_at_position	test_dll.c	/^void test_dll_get_node_at_position()$/;"	f
+test_dll_insert_at_position	test_dll.c	/^void test_dll_insert_at_position()$/;"	f
+test_dll_node_values_equal	test_dll.c	/^void test_dll_node_values_equal()$/;"	f
+test_dll_prepend_to_empty_list	test_dll.c	/^void test_dll_prepend_to_empty_list()$/;"	f
+test_dll_prepend_to_nonempty_list	test_dll.c	/^void test_dll_prepend_to_nonempty_list()$/;"	f
+test_dll_print	test_dll.c	/^void test_dll_print()$/;"	f
+test_dll_reverse	test_dll.c	/^void test_dll_reverse()$/;"	f
+test_dll_slice	test_dll.c	/^void test_dll_slice()$/;"	f
+value	dll.h	/^    void *value;        \/\/ IMPORTANT: value can be pointer to int, char, double or string$/;"	m	struct:node
+value_type	dll.h	/^    enum DLL_TYPES value_type;$/;"	m	struct:dll	typeref:enum:dll::DLL_TYPES

@@ -1,0 +1,76 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+0	Session.vim	/^normal! 0$/;"	m
+06|	Session.vim	/^normal! 06|$/;"	m
+CC	makefile	/^CC =  gcc$/;"	m
+CFLAGS	makefile	/^CFLAGS = -Wall -g$/;"	m
+OBJ	makefile	/^OBJ = test_sll.o sll.o$/;"	m
+SLL_H	sll.h	4;"	d
+SLL_TYPES	sll.h	/^enum SLL_TYPES { $/;"	g
+SessionLoad	Session.vim	/^let SessionLoad = 1$/;"	v
+TARGET	makefile	/^TARGET = test_sll$/;"	m
+TEST_SLL_H	test_sll.h	2;"	d
+__test_helper_make_sll_sut	test_sll.c	/^sll *__test_helper_make_sll_sut(enum SLL_TYPES value_type, unsigned int size)$/;"	f
+character	sll.h	/^	character, $/;"	e	enum:SLL_TYPES
+decimal	sll.h	/^	decimal, $/;"	e	enum:SLL_TYPES
+head	sll.h	/^    node *head;$/;"	m	struct:sll
+integer	sll.h	/^	integer, $/;"	e	enum:SLL_TYPES
+main	test_sll.c	/^int main()$/;"	f
+next	sll.h	/^    struct node *next;$/;"	m	struct:node	typeref:struct:node::node
+node	sll.h	/^typedef struct node {$/;"	s
+node	sll.h	/^} node;$/;"	t	typeref:struct:node
+s:l	Session.vim	/^let s:l = 205 - ((6 * winheight(0) + 22) \/ 45)$/;"	v
+s:l	Session.vim	/^let s:l = 27 - ((26 * winheight(0) + 22) \/ 45)$/;"	v
+s:l	Session.vim	/^let s:l = 4 - ((3 * winheight(0) + 22) \/ 45)$/;"	v
+s:l	Session.vim	/^let s:l = 5 - ((4 * winheight(0) + 22) \/ 45)$/;"	v
+s:l	Session.vim	/^let s:l = 9 - ((8 * winheight(0) + 22) \/ 45)$/;"	v
+s:so_save	Session.vim	/^let s:so_save = &so | let s:siso_save = &siso | set so=0 siso=0$/;"	v
+s:sx	Session.vim	/^let s:sx = expand("<sfile>:p:r")."x.vim"$/;"	v
+s:wipebuf	Session.vim	/^  let s:wipebuf = bufnr('%')$/;"	v
+size	sll.h	/^    unsigned int size;$/;"	m	struct:sll
+sll	sll.h	/^typedef struct sll {$/;"	s
+sll	sll.h	/^} sll;$/;"	t	typeref:struct:sll
+sll_append	sll.c	/^void sll_append(sll *list, node *new_node)$/;"	f
+sll_concat_lists	sll.c	/^sll *sll_concat_lists(sll *list1, sll *list2)$/;"	f
+sll_count_value	sll.c	/^unsigned int sll_count_value(sll *list, void *value)$/;"	f
+sll_create_list	sll.c	/^sll *sll_create_list(enum SLL_TYPES value_type) $/;"	f
+sll_create_node	sll.c	/^node *sll_create_node(void *value)$/;"	f
+sll_delete_node	sll.c	/^void sll_delete_node(sll *list, unsigned int position, bool delete_value)$/;"	f
+sll_empty_list	sll.c	/^void sll_empty_list(sll *list, bool delete_node_values)$/;"	f
+sll_equal	sll.c	/^bool sll_equal(sll *first, sll *second)$/;"	f
+sll_find_first_node_with_value	sll.c	/^node *sll_find_first_node_with_value(sll *list, void *value, int *position)$/;"	f
+sll_get_node_at_position	sll.c	/^node *sll_get_node_at_position(sll *list, unsigned int position)$/;"	f
+sll_get_node_before_position	sll.c	/^node *sll_get_node_before_position(sll *list, unsigned int position)$/;"	f
+sll_insert_at_position	sll.c	/^void sll_insert_at_position(sll *list, unsigned int position, node *new_node) $/;"	f
+sll_node_values_equal	sll.c	/^bool sll_node_values_equal(enum SLL_TYPES value_type, node *first, node *second)$/;"	f
+sll_prepend	sll.c	/^void sll_prepend(sll *list, node *new_node)$/;"	f
+sll_print	sll.c	/^void sll_print(sll *list) $/;"	f
+sll_print_node	sll.c	/^void sll_print_node(enum SLL_TYPES value_type, node *anode) $/;"	f
+sll_slice	sll.c	/^sll *sll_slice(sll *list, unsigned int start, unsigned int end)$/;"	f
+string	sll.h	/^	string $/;"	e	enum:SLL_TYPES
+test_sll_append_to_empty_list	test_sll.c	/^void test_sll_append_to_empty_list()$/;"	f
+test_sll_append_to_nonempty_list	test_sll.c	/^void test_sll_append_to_nonempty_list()$/;"	f
+test_sll_concat_lists	test_sll.c	/^void test_sll_concat_lists()$/;"	f
+test_sll_count_value	test_sll.c	/^void test_sll_count_value()$/;"	f
+test_sll_create_list	test_sll.c	/^void test_sll_create_list()$/;"	f
+test_sll_create_node	test_sll.c	/^void test_sll_create_node()$/;"	f
+test_sll_delete_node	test_sll.c	/^void test_sll_delete_node()$/;"	f
+test_sll_empty_list	test_sll.c	/^void test_sll_empty_list()$/;"	f
+test_sll_equal	test_sll.c	/^void test_sll_equal()$/;"	f
+test_sll_find_first_node_with_value	test_sll.c	/^void test_sll_find_first_node_with_value()$/;"	f
+test_sll_get_node_at_position	test_sll.c	/^void test_sll_get_node_at_position()$/;"	f
+test_sll_get_node_before_position	test_sll.c	/^void test_sll_get_node_before_position()$/;"	f
+test_sll_insert_at_position	test_sll.c	/^void test_sll_insert_at_position()$/;"	f
+test_sll_node_values_equal	test_sll.c	/^void test_sll_node_values_equal()$/;"	f
+test_sll_prepend_to_empty_list	test_sll.c	/^void test_sll_prepend_to_empty_list()$/;"	f
+test_sll_prepend_to_nonempty_list	test_sll.c	/^void test_sll_prepend_to_nonempty_list()$/;"	f
+test_sll_print	test_sll.c	/^void test_sll_print()$/;"	f
+test_sll_slice	test_sll.c	/^void test_sll_slice()$/;"	f
+value	sll.h	/^    void *value;        \/\/ IMPORTANT: value can be pointer to int, char, double or string$/;"	m	struct:node
+value_type	sll.h	/^    enum SLL_TYPES value_type;$/;"	m	struct:sll	typeref:enum:sll::SLL_TYPES
+zo	Session.vim	/^normal! zo$/;"	m
+zt	Session.vim	/^normal! zt$/;"	m
